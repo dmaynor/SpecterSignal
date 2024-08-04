@@ -1,0 +1,15 @@
+App(
+    appid="specter_signal",
+    name="Specter Signal",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="specter_signal_app",
+    cdefines=["APP_SPECTER_SIGNAL"],
+    requires=[
+        "gui",
+        "subghz",
+    ],
+    stack_size=2 * 1024,
+    order=20,
+#    fap_icon="specter_signal.png",
+    fap_category="Tools",
+)
